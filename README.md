@@ -28,9 +28,10 @@ To keep the exploratory analysis Mutually Exclusive and Collectively Exhaustive 
 This project is strictly an Exploratory Data Analysis (EDA). The scope involves data cleaning, imputation of missing values, and exploring the statistical relationships between categorical inputs and numerical market outputs. It does *not* include the development of machine learning models or the backtesting of live trading algorithms.
 
 ## Repository Structure
-.gitignore
-README.md
-cap2_eda.ipynb          # Main Jupyter Notebook containing the EDA
+├── .gitignore
+├── README.md
+├── cap_eda.ipynb          # Main Jupyter Notebook containing the EDA
+└── dataset.csv            # (Not tracked in Git) Raw data file
 
 
 ## How to Run
