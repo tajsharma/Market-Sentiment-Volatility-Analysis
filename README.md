@@ -31,7 +31,7 @@ This project is strictly an Exploratory Data Analysis (EDA). The scope involves 
 ```text
 ├── .gitignore
 ├── README.md
-├── cap_eda.ipynb          # Main Jupyter Notebook containing the EDA
+├── cap2_eda.ipynb          # Main Jupyter Notebook containing the EDA
 └── dataset.csv            # (Not tracked in Git) Raw data file
 ```
 
