@@ -1,0 +1,87 @@
+The starting question: What type of news moves the market?
+
+Branches: 
+    1. What happened? 
+    2. When it happened?
+    3. Who was involved?
+    4. How it was reported?
+    5. When it happened?
+    6. How significant was it perceived?
+
+Hypotheses:
+    1. What happened? (Market_event)
+        a. I believe that will policy/regalatory events will cause higher 
+        volaltility in market events becaus most traders takes these into
+        consideration as these events directly impact how companies can 
+        operate and it influences how they import/export services/goods. 
+
+        b. Macro-economic indicators move slowly and are often priced in 
+        before official releases, so the actual announcement may cause 
+        less surprise and therefore less volatility.
+
+    2. Where it happened? (Sector)
+        a. I believe we will find that sectors will show clearly different
+        levels of volaltility as sectors like Tech (reliance on future earnings, 
+        rapid innovation, new players), Energy(gas/oil prices going up and down),
+        Materials (manufacturing laws, supply chain), and Pharmaceuticals (depends 
+        on patents and approvals) will be a lot mlore volatile than Consumer Goods 
+        which have a constant demand, Utilities which are essential have lower 
+        price fluctuations and Real Estate which is tangible and has long term
+        value. 
+
+        b. The spread between the most and least volatile sectors will be under 
+        0.5 percentage points because the news events in this dataset are 
+        macro-level in nature — they affect entire markets, not individual 
+        industries. Sector-specific sensitivity exists but is muted by the 
+        broad scope of these events.
+    
+    3. Who was involved? (Related_Company)
+        a. Financial institutions like JP Morgan will show disproportionately higher 
+        volatility during Central Bank Meetings and Interest Rate Changes compared 
+        to their overall average, while tech companies like Tesla or Apple will spike 
+        more during Regulatory Changes and Trade Tariff Announcements — because each 
+        company's core business model is exposed to different policy levers.
+
+        b. Companies that appear more frequently in the dataset will show lower average 
+        volatility per event because frequent coverage suggests routine news flow, 
+        while companies that appear rarely are only covered during exceptional events 
+        which tend to be more disruptive.
+
+    4. How was it reported? (Sentiment)
+        a. I believe that negative sentiment will drive more volatility because humans
+        are more risk averse and would be more likely to sell a stock because 'the 
+        internet will not be needed' for example rather than buy a new stock that 
+        promises ' a lot of growth' Negative news sticks more to us rather than good news. 
+        
+        b. ews source will have minimal independent effect on volatility because all 
+        outlets are reporting on the same underlying events. Any differences in volatility
+        by source will disappear once you control for event type — meaning the source's 
+        apparent effect is actually just a reflection of which events they choose to cover.
+
+    5. When it happened? 
+        a. Mondays will show higher average volatility than other weekdays because news 
+        accumulates over the weekend and hits the market all at once. Fridays will show the 
+        second-highest volatility as traders rebalance positions before the weekend to reduce 
+        risk exposure.
+
+        b. Volatility will not be evenly distributed across the dataset's timeline — it will 
+        cluster into 'regimes' where several weeks of elevated volatility are followed by 
+        calm periods. These clusters will coincide with periods where multiple high-impact 
+        event types occurred simultaneously.
+
+        c. Months that coincide with corporate earnings season (January, April, July, October) 
+        will show elevated volatility because earnings reports flood the market with new 
+        information simultaneously, forcing rapid repricing across sectors.
+
+    6. How significant was it perceived? (Market_index and Impact_level)
+        a. Events labeled 'High' impact will show at least 50% more average volatility than 
+        'Low' impact events. If this relationship is weak, it suggests the Impact_Level label
+        in the dataset is poorly assigned and not a reliable feature.
+
+        b. Different indices will show different baseline volatility levels. A tech-heavy index
+        like NASDAQ will show higher volatility on Technology and IPO events, while a broad index 
+        like the S&P 500 will react more evenly across event types because it's diversified.
+
+        c. High impact + negative sentiment events will show disproportionately higher volatility
+        than what you'd expect from adding the two effects separately. In other words, the combination
+        is worse than the sum of its parts.
